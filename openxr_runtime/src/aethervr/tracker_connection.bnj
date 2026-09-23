@@ -147,7 +147,8 @@ struct TrackerConnection {
         var local_position = Vec3.new(message.x, message.y, message.z);
         self.state.headset.pose.position = local_position;
         self.state.headset.pose.position.y += 1.3;
-
+        self.state.headset.pose.position.z += 0.7;
+        
         return true;
     }
 
